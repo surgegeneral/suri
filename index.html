@@ -644,4 +644,23 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
-    const target = d
+    const target = document.getElementById(a.getAttribute('href').slice(1));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+<!-- Google Ads Conversion Tracking for Calendly -->
+<script>
+  window.addEventListener('message', function(e) {
+    if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17689501062/Y46JCOG9xZIcEIa7gfNB',
+        'value': 3500.0,
+        'currency': 'USD'
+      });
+    }
+  });
+</script>
+</body>
+</html>
