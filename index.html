@@ -222,19 +222,22 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
 .footer-copy{font-size:12px;color:rgba(255,255,255,0.15);}
 @media(max-width:768px){footer{flex-direction:column;padding:32px 24px;text-align:center;}.footer-links{justify-content:center;}}
 </style>
+<!-- Calendly popup widget -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
 
 <!-- Sticky Bar -->
 <div class="sticky">
   <p><strong>4 spots left</strong> in the founding cohort — lock in preferred pricing for 12 months.</p>
-  <a href="https://calendly.com/readytosurge/surieap" target="_blank">Get Early Access →</a>
+  <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;">Get Early Access →</a>
 </div>
 
 <!-- Nav -->
 <nav>
   <div class="nav-logo">Suri<sup>™</sup></div>
-  <a href="https://calendly.com/readytosurge/surieap" target="_blank" class="nav-cta">Get Early Access →</a>
+  <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;" class="nav-cta">Get Early Access →</a>
 </nav>
 
 <!-- Hero -->
@@ -248,7 +251,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
   <p class="hero-sub">Suri is your Agentic HR Business Partner — embedded in Slack and Teams. Compliance, onboarding, manager coaching, and employee Q&A. No added headcount.</p>
   <p class="hero-trust">Trusted by founders & HR leaders at Series A/B tech companies · 30–150 employees</p>
   <div class="hero-btns">
-    <a href="https://calendly.com/readytosurge/surieap" target="_blank" class="btn-primary">Request Early Access →</a>
+    <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;" class="btn-primary">Request Early Access →</a>
     <a href="#how-it-works" class="btn-secondary">See How It Works</a>
   </div>
 </section>
@@ -500,7 +503,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
           <li>Direct line to our product and success team</li>
           <li>Shape the product roadmap</li>
         </ul>
-        <a href="https://calendly.com/readytosurge/surieap" target="_blank" class="price-btn" style="display:block;text-align:center;padding:16px;border-radius:10px;font-size:15px;font-weight:800;background:var(--teal);color:#000;">Apply for Early Access</a>
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;" class="price-btn" style="display:block;text-align:center;padding:16px;border-radius:10px;font-size:15px;font-weight:800;background:var(--teal);color:#000;">Apply for Early Access</a>
       </div>
       <div class="price-card">
         <div class="price-label">Enterprise</div>
@@ -515,7 +518,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
           <li>Multi-location & multi-state compliance</li>
           <li>Priority SLA</li>
         </ul>
-        <a href="https://calendly.com/readytosurge/surieap" target="_blank" class="price-btn outline" style="display:block;text-align:center;padding:16px;border-radius:10px;font-size:15px;font-weight:800;border:1px solid rgba(255,255,255,0.12);color:#fff;background:transparent;">Talk to Us</a>
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;" class="price-btn outline" style="display:block;text-align:center;padding:16px;border-radius:10px;font-size:15px;font-weight:800;border:1px solid rgba(255,255,255,0.12);color:#fff;background:transparent;">Talk to Us</a>
       </div>
     </div>
   </div>
@@ -612,7 +615,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
     <span class="cap-spots">4 spots left</span>
   </div>
   <div class="final-btns">
-    <a href="https://calendly.com/readytosurge/surieap" target="_blank" class="btn-primary">Claim Your Spot →</a>
+    <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/readytosurge/surieap'});return false;" class="btn-primary">Claim Your Spot →</a>
   </div>
 </section>
 
@@ -649,6 +652,12 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 </script>
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/readytosurge/surieap?primary_color=00c2cb', text: 'Get Suri Today!', color: '#00c2cb', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 
 <!-- Google Ads Conversion Tracking for Calendly -->
 <script>
