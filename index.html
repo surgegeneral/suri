@@ -207,26 +207,20 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 48px;display:fle
 .footer-links a:hover{color:rgba(255,255,255,0.6);}
 .footer-copy{font-size:12px;color:rgba(255,255,255,0.15);}
 @media(max-width:768px){footer{flex-direction:column;padding:32px 24px;text-align:center;}.footer-links{justify-content:center;}}
+.sticky{position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.94);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,0.07);padding:14px 48px;display:flex;align-items:center;justify-content:space-between;z-index:999;}
+.sticky p{font-size:14px;color:rgba(255,255,255,0.55);}
+.sticky p strong{color:var(--teal);font-weight:700;}
+.sticky a{background:var(--teal);color:#000;font-size:14px;font-weight:800;padding:11px 26px;border-radius:8px;letter-spacing:-0.01em;white-space:nowrap;transition:filter .2s;}
+.sticky a:hover{filter:brightness(1.1);}
+@media(max-width:600px){.sticky{padding:12px 20px;}.sticky p{font-size:12px;display:none;}}
 </style>
 
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-<script type="text/javascript">
-(function() {
-  function initCalendly() {
-    if (typeof Calendly !== 'undefined') {
-      Calendly.initBadgeWidget({ url: 'https://calendly.com/readytosurge/surieap?primary_color=00c2cb', text: 'Get Early Access', color: '#00c2cb', textColor: '#ffffff', branding: undefined });
-    } else {
-      setTimeout(initCalendly, 100);
-    }
-  }
-  window.addEventListener('load', initCalendly);
-})();
-</script>
-<!-- Calendly badge widget end -->
 </head>
 <body>
+<div class="sticky">
+  <p><strong>4 spots left</strong> in the founding cohort — lock in preferred pricing for 12 months.</p>
+  <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/readytosurge/surieap?primary_color=00c2cb'});return false;">Get Early Access →</a>
+</div>
 
 <!-- Sticky Bar -->
 <!-- Nav -->
